@@ -6,7 +6,7 @@ var ray = (function() {
   return {
     speak: function() {
       var myArgumnets = arguments[0] || "";
-      var statement = myArgumnets.say || "Hello";
+      var statement = myArgumnets.say || DEFAULTS.say;
 
       console.log(statement);
     }
